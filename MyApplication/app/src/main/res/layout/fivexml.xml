@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:andorid="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fivexml"
+    android:orientation="vertical">
+
+//整体的线性布局，线性布局还是有线局限，无法满足当下完全的需求
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pluese enter your phone number"
+        tools:ignore="MissingPrefix" />
+//显示框，自带文字
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+//此为下滑线，可以依据需要修改大小，粗细长短和颜色
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></EditText>
+//输入框，默认是获取状态
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+//下滑线
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+//内嵌LinearLayout，重新线性布局设置
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"></Button>
+//第一个处理按钮
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete"></Button>
+//第二个处理按钮
+
+    </LinearLayout>
+    //下滑线区分
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+</LinearLayout>
